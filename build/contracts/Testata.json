@@ -1,0 +1,225 @@
+{
+  "contractName": "Testata",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820a2c61b10d1acf7c0680a8435709d908f6b438c40e93413a9ee9900616a9c58bd0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820a2c61b10d1acf7c0680a8435709d908f6b438c40e93413a9ee9900616a9c58bd0029",
+  "sourceMap": "28:100:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "28:100:1:-;;;;;",
+  "source": "pragma solidity ^0.4.19;\r\n\r\ncontract Testata {\r\n    \r\n    struct Testata {\r\n        string name;\r\n        uint16 size;\r\n    }\r\n}",
+  "sourcePath": "D:\\dev\\ethereum\\truffle\\testdata\\contracts\\Testdata.sol",
+  "ast": {
+    "absolutePath": "/D/dev/ethereum/truffle/testdata/contracts/Testdata.sol",
+    "exportedSymbols": {
+      "Testata": [
+        105
+      ]
+    },
+    "id": 106,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 99,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 105,
+        "linearizedBaseContracts": [
+          105
+        ],
+        "name": "Testata",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Testata.Testata",
+            "id": 104,
+            "members": [
+              {
+                "constant": false,
+                "id": 101,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 104,
+                "src": "84:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 100,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "84:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 103,
+                "name": "size",
+                "nodeType": "VariableDeclaration",
+                "scope": 104,
+                "src": "106:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 102,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "106:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Testata",
+            "nodeType": "StructDefinition",
+            "scope": 105,
+            "src": "58:67:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 106,
+        "src": "28:100:1"
+      }
+    ],
+    "src": "0:128:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/dev/ethereum/truffle/testdata/contracts/Testdata.sol",
+    "exportedSymbols": {
+      "Testata": [
+        105
+      ]
+    },
+    "id": 106,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 99,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 105,
+        "linearizedBaseContracts": [
+          105
+        ],
+        "name": "Testata",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Testata.Testata",
+            "id": 104,
+            "members": [
+              {
+                "constant": false,
+                "id": 101,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 104,
+                "src": "84:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 100,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "84:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 103,
+                "name": "size",
+                "nodeType": "VariableDeclaration",
+                "scope": 104,
+                "src": "106:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 102,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "106:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Testata",
+            "nodeType": "StructDefinition",
+            "scope": 105,
+            "src": "58:67:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 106,
+        "src": "28:100:1"
+      }
+    ],
+    "src": "0:128:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-04T06:12:29.957Z"
+}
