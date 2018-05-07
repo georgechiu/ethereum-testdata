@@ -25,4 +25,8 @@ contract TestataFactory is Ownable {
         ownerDataCount[msg.sender]++;
         emit NewTestdata(id, _name);
     }
+
+    function createTestData(string _name, uint _size) public {
+        _createTestdata(_name, _size);
+    }
 }
