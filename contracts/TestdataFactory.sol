@@ -35,7 +35,7 @@ contract TestdataFactory is Ownable {
         return ownerDataCount[_owner];
     }
 
-    function getTestdataByOwner(address _owner) external view returns(uint[]) {
+    function getTestdata(address _owner) external view returns(uint[]) {
         uint[] memory result = new uint[](ownerDataCount[_owner]);
         uint counter = 0;
         for (uint i = 0; i < testdata.length; i++) {
