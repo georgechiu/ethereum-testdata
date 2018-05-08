@@ -1,9 +1,9 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.21;
 
-import "./ownable.sol";
-import "./safemath.sol";
+import "./Ownable.sol";
+import "./SafeMath.sol";
 
-contract TestataFactory is Ownable {
+contract TestdataFactory is Ownable {
     
     using SafeMath for uint256;
 
@@ -26,7 +26,23 @@ contract TestataFactory is Ownable {
         emit NewTestdata(id, _name);
     }
 
-    function createTestData(string _name, uint _size) public {
+    function createTestdata(string _name, uint _size) public {
         _createTestdata(_name, _size);
+    }
+
+    function getTestdataCount(address _owner) external view returns(uint) {
+        return ownerDataCount[_owner];
+    }
+
+    function getTestdataByOwner(address _owner) external view returns(uint[]) {
+        uint[] memory result = new uint[](ownerDataCount[_owner]);
+        uint counter = 0;
+        for (uint i = 0; i < testdata.length; i++) {
+            if (dataToOwner[i] == _owner) {
+                result[counter] = i;
+                counter++;
+            }
+        }
+        return result;
     }
 }
